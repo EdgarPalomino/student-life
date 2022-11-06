@@ -1,0 +1,174 @@
+/* Adding style to the body of the website */
+
+/* Doing a global reset for all elements of the website */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Setting the background color of the body to the same color as the background color of the drawings */
+
+body { background-color: #F8F8F8 }
+
+/* Making the cursor change to a pointer when the mouse hovers over a clickable part */
+
+.click { cursor: pointer }
+
+
+/* Adding style to the soundpiece section */
+
+/* Using the flexbox layout to be able to design the soundpiece */
+
+#soundpiece {
+	display: flex;
+	height: 100vh;
+	width: 100vw;
+}
+
+/* Adding style to the drawing div */
+
+/* Using the grid layout to be able to put the drawings all on top of each other */
+
+.drawing {
+	display: grid;
+	justify-content: left;
+	align-items: center;
+	width: 70%;
+}
+
+svg {
+	height: 85vh;
+	grid-row: 1;
+	grid-column: 1;
+}
+
+/* Hiding all of the drawings except the one on top */
+
+#bathroom-drawing { visibility: hidden }
+#classroom-drawing { visibility: hidden }
+#dining-hall-drawing { visibility: hidden }
+#library-cafe-drawing { visibility: hidden }
+#football-field-drawing { visibility: hidden }
+#snack-room-drawing { visibility: hidden }
+#bedtime-drawing { visibility: hidden }
+
+/* Adding style to the menu div */
+
+/* Using the flexbox layout to be able to design the menu */
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 30%;
+}
+
+/* Using the grid layout to be able to put the emojis all on top of each other */
+
+.emoji {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+.emoji img {
+	height: 65vh;
+	grid-row: 1;
+	grid-column: 1;
+}
+
+/* Hiding all emojis except the one on top */
+
+#bathroom-emoji { visibility: hidden }
+#classroom-emoji { visibility: hidden }
+#dining-hall-emoji { visibility: hidden }
+#library-cafe-emoji { visibility: hidden }
+#football-field-emoji { visibility: hidden }
+#snack-room-emoji { visibility: hidden }
+#bedtime-emoji { visibility: hidden }
+
+/* Setting the font family and font size of the messages */
+
+.prompt {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+.prompt p {
+	font-family: "Brush Script MT", "Tahoma", sans-serif;
+	font-size: 25pt;
+	grid-row: 1;
+	grid-column: 1;
+}
+
+.control img {
+	height: 15vh;
+	border-radius: 50%;
+}
+
+/* Making the images of the audio reproduction buttons change when the mouse hovers over them */
+
+#play-button:hover { content: url("Play Pressed.jpeg") }
+#pause-button:hover { content: url("Pause Pressed.jpeg") }
+#replay-button:hover { content: url("Replay Pressed.jpeg") }
+
+
+/* Animations for the soundpiece section */
+
+.drawing-fade-out { 
+	animation-name: drawing-fade-out; 
+	animation-duration: 2.8s; 
+	animation-fill-mode: forwards; 
+}
+
+@keyframes drawing-fade-out { 
+	from { opacity: 1; }
+	to { opacity: 0; visibility: hidden; } 
+}
+
+.message-fade-in { 
+	animation-name: message-fade-in; 
+	animation-duration: 1.4s; 
+	animation-fill-mode: forwards; 
+}
+
+@keyframes message-fade-in { 
+	from { opacity: 0; visibility: visible; display: block; }
+	to { opacity: 1; } 
+}
+
+.message-fade-out { 
+	animation-name: message-fade-out; 
+	animation-duration: 1.4s; 
+	animation-fill-mode: forwards; 
+}
+
+@keyframes message-fade-out { 
+	from { opacity: 1; }
+	to { opacity: 0; visibility: hidden; display: none; } 
+}
+
+.page-fade-in { 
+	animation-name: page-fade-in; 
+	animation-duration: 2.8s; 
+	animation-fill-mode: forwards; 
+}
+
+@keyframes page-fade-in { 
+	from { opacity: 0; }
+	to { opacity: 1; } 
+}
+
+.page-fade-out { 
+	animation-name: page-fade-out; 
+	animation-duration: 2.8s; 
+	animation-fill-mode: forwards; 
+}
+
+@keyframes page-fade-out { 
+	from { opacity: 1; }
+	to { opacity: 0; } 
+}

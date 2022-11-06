@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Student Life </title>
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	<!-- Creating the soundpiece section !-->
+	<!-- Note: The svgs are internal svgs (and not external svgs) to be able to add animations to the soundpiece !-->
+	<!-- Note: The drawings and svgs are placed all on top of each other (to only have to change their visibility when the audio changes) !-->
+	<content id="soundpiece" class="page-fade-in">
+		<div class="drawing">
+			<!-- MAKE SURE TO ADD FADE OUT WITH JAVASCRIPT !-->
+			<!-- Bedroom Drawing !-->
+			<svg id="bedroom-drawing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080"><defs><style>.cls-1{fill:#fff;opacity:0;}</style></defs><g id="bedroom-colored" data-name="Bedroom Colored"><image width="1920" height="972" transform="scale(1 1.11)" xlink:href="Bedroom Colored.jpeg"/></g><g id="bedroom-click" class="click" data-name="Bedroom Click"><polygon class="cls-1" points="1375 804 1330 817 1319 841 1319 871.4 1299 893 1291 915 1291 945.39 1303 965 1333 998.23 1333 1027.29 1365 1055 1401.06 1055 1444.65 1055 1467 1029 1490 1010 1512 985 1531 945 1524 914 1497 883 1479 852 1454 828 1420 812 1375 804"/></g><g id="bedroom-uncolored" class="" data-name="Bedroom Uncolored"><image width="1920" height="972" transform="scale(1 1.11)" xlink:href="Bedroom Uncolored.jpg"/></g></svg>
+			<!-- Bathroom Drawing !-->
+			<svg id="bathroom-drawing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080"><defs><style>.cls-2{fill:#fff;opacity:0;}</style></defs><g id="bathroom-colored" data-name="Bathroom Colored"><image width="1920" height="972" transform="scale(1 1.11)" xlink:href="Bathroom Colored.jpeg"/></g><g id="bathroom-click" class="click" data-name="Bathroom Click"><polygon class="cls-2" points="876 702 810 730 782 747 769 773 786 798 812 810 838 826 897 795 929.67 764 920 734 900 709 876 702"/></g><g id="bathroom-uncolored" class="" data-name="Bathroom Uncolored"><image width="1920" height="972" transform="scale(1 1.11)" xlink:href="Bathroom Uncolored.jpg"/></g></svg>
+			<!-- Classroom Drawing !-->
+			<svg id="classroom-drawing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080"><defs><style>.cls-3{fill:#fff;opacity:0;}</style></defs><g id="classroom-colored" data-name="Classroom Colored"><image width="1920" height="972" transform="scale(1 1.11)" xlink:href="Classroom Colored.jpeg"/></g><g id="classroom-click" class="click" data-name="Classroom Click"><polygon class="cls-3" points="1113 447 1106 427 1127 393 1152.96 393 1163 409 1163 429.62 1171 453 1178 460 1178 481.67 1178 521.4 1171 530 1150.22 530 1142 551.53 1124 560 1106 560 1098.16 540 1098.16 517.29 1098.16 503.59 1069 471 1058 453 1058 429.62 1068 421 1083 424 1097 439 1118 458.38 1113 447"/></g><g id="classroom-uncolored" class="" data-name="Classroom Uncolored"><image width="1920" height="972" transform="scale(1 1.11)" xlink:href="Classroom Uncolored.jpg"/></g></svg>
+			<!-- Dining Hall Drawing !-->
+			<svg id="dining-hall-drawing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080"><defs><style>.cls-4{fill:#fff;opacity:0;}</style></defs><g id="dining-hall-colored" data-name="Dining Hall Colored"><image width="1920" height="972" transform="translate(0 -1) scale(1 1.11)" xlink:href="Dining Hall Colored.jpeg"/></g><g id="dining-hall-click" class="click" data-name="Dining Hall Click"><polygon class="cls-4" points="893 312 871 331 857 356 847 376 847 394 870 404.96 913.23 404.96 947.48 404.96 972 372 960 358.48 949 346 926 338 916 319 893 312"/></g><g id="dining-hall-uncolored" class="" data-name="Dining Hall Uncolored"><image width="1920" height="972" transform="translate(0 -1) scale(1 1.11)" xlink:href="Dining Hall Uncolored.jpg"/></g></svg>
+			<!-- Library Cafe Drawing !-->
+			<svg id="library-cafe-drawing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080"><defs><style>.cls-5{fill:#fff;opacity:0;}</style></defs><g id="library-cafe-colored" data-name="Library Cafe Colored"><image width="1920" height="972" transform="scale(1 1.11)" xlink:href="Library Cafe Colored.jpeg"/></g><g id="library-cafe-click" class="click" data-name="Library Cafe Click"><polygon class="cls-5" points="1023 568 1083.1 540 1132 528 1189 521 1244.74 521 1284 532 1305 578 1305 629.62 1305 673.45 1289 717 1305 763.86 1323 832 1330 873 1289 919 1216 928 1142 928 1065 935 993 893 986 852 1006 815 1026 762 1000 678 1004 594 1023 568"/></g><g id="library-cafe-uncolored" class="" data-name="Library Cafe Uncolored"><image width="1920" height="972" transform="scale(1 1.11)" xlink:href="Library Cafe Uncolored.jpg"/></g></svg>
+			<!-- Football Field Drawing !-->
+			<svg id="football-field-drawing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080"><defs><style>.cls-6{fill:#fff;opacity:0;}</style></defs><g id="football-field-colored" data-name="Football Field Colored"><image width="1920" height="972" transform="scale(1 1.11)" xlink:href="Football Field Colored.jpeg"/></g><g id="football-field-click" class="click" data-name="Football Field Click"><polygon class="cls-6" points="815 701 771 717 745 739 721 778 690 816 684 858 698 894 712 926 730 965 756 990 815 1035.1 927 1010 971.33 958.28 1005 919 1005 850.16 978 775 900 712 815 701"/></g><g id="football-field-uncolored" class="" data-name="Football Field Uncolored"><image width="1920" height="972" transform="scale(1 1.11)" xlink:href="Football Field Uncolored.jpg"/></g></svg>
+			<!-- Snack Room Drawing !-->
+			<svg id="snack-room-drawing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080"><defs><style>.cls-7{fill:#fff;opacity:0;}</style></defs><g id="snack-room-colored" data-name="Snack Room Colored"><image width="1920" height="972" transform="scale(1 1.11)" xlink:href="Snack Room Colored.jpeg"/></g><g id="snack-room-click" class="click" data-name="Snack Room Click"><polygon class="cls-7" points="715 149 668 178 647 213 647 263.86 657 308 647 337.84 647 389.89 653 419 647 470.71 689 513 754 531 809.12 531 872 513 960 509.07 1012 509 1097 513 1163 495 1205 432 1198 367 1205 288.52 1187 258 1205 214.55 1176 167 1117.34 149 1017 139 938 146 806 150 756 153 715 149"/></g><g id="snack-room-uncolored" class="" data-name="Snack Room Uncolored"><image width="1920" height="972" transform="scale(1 1.11)" xlink:href="Snack Room Uncolored.jpg"/></g></svg>
+			<!-- Bedtime Drawing !-->
+			<svg id="bedtime-drawing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080"><defs><style>.cls-8{fill:#fff;opacity:0;}</style></defs><g id="bedtime-colored" data-name="Bedtime Colored"><image width="1920" height="972" transform="scale(1 1.11)" xlink:href="Bedroom Colored.jpeg"/></g><g id="bedtime-click" class="click" data-name="Bedtime Click"><polygon class="cls-8" points="1375 804 1330 817 1319 841 1319 871.4 1299 893 1291 915 1291 945.39 1303 965 1333 998.23 1333 1027.29 1365 1055 1401.06 1055 1444.65 1055 1467 1029 1490 1010 1512 985 1531 945 1524 914 1497 883 1479 852 1454 828 1420 812 1375 804"/></g><g id="bedtime-uncolored" class="" data-name="Bedtime Uncolored"><image width="1920" height="972" transform="scale(1 1.11)" xlink:href="Bedroom Uncolored.jpg"/></g></svg>
+		</div>
+		<div class="menu">
+			<div class="emoji">
+				<img src="Bedroom Emoji.png" id="bedroom-emoji"/>
+				<img src="Bathroom Emoji.png" id="bathroom-emoji"/>
+				<img src="Classroom Emoji.png" id="classroom-emoji"/>
+				<img src="Dining Hall Emoji.png" id="dining-hall-emoji"/>
+				<img src="Library Cafe Emoji.png" id="library-cafe-emoji"/>
+				<img src="Football Field Emoji.png" id="football-field-emoji"/>
+				<img src="Snack Room Emoji.png" id="snack-room-emoji"/>
+				<img src="Bedtime Emoji.png" id="bedtime-emoji"/>
+				<!-- <img src="Bedroom Emoji.png" id="fefe"/> !-->
+			</div>
+			<div class="prompt">
+				<p id="message" class="message-fade-in"> Press play to start your day! </p>
+			</div>
+			<div class="control">
+				<img src="Play Unpressed.jpeg" id="play-button" class="click" onclick="playAudio()" />
+				<img src="Pause Unpressed.jpeg" id="pause-button" class="click" onclick="pauseAudio()"/>
+				<img src="Replay Unpressed.jpeg" id="replay-button" class="click" onclick="replayAudio()"/>
+			</div>
+		</div>
+	</content>
+</body>
+	<script src="script.js"></script>
+</html>
